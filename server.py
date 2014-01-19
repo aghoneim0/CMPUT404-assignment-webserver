@@ -39,7 +39,7 @@ class MyWebServer(SocketServer.BaseRequestHandler):
         
     #Reads the file and send it back 
     def get_file (self,requ):
-            print 'Get File Data : '+requ
+            #print 'Get File Data : '+requ
             if "www" not in requ :
                                 requ= "/www"+requ
             try:
@@ -51,7 +51,7 @@ class MyWebServer(SocketServer.BaseRequestHandler):
                      data='<html><head><h2>Error 404! Page not Found</h2></head>'
                      error=self.create_header(data,404)
                      self.request.sendall(error)
-                     print 'error in file openin'
+                     #print 'error in file openin'
             return file_data
 
     #Over ride the current handle function in  BaseRequestHandler   
@@ -67,14 +67,14 @@ class MyWebServer(SocketServer.BaseRequestHandler):
                
 
         if ".html" in requ:
-                print "In Html"
+                #print "In Html"
                 data = self.get_file(requ)
                 data = self.create_header(data,'html')
                 self.request.sendall(data)
                 return
 
         if ".css" in requ:
-                 print "In Css"
+                 #print "In Css"
 		 temp_css=requ
 		 Flag=0
 		 temp_css=temp_css.split('/')
@@ -126,7 +126,7 @@ class MyWebServer(SocketServer.BaseRequestHandler):
                         data='<html><head><h2>Error 404! Page not Found</h2></head>'
                         error=self.create_header(data,404)
                         self.request.sendall(error)
-                        print 'error  ' + requ
+                        #print 'error  ' + requ
                         return 
 
                                 
