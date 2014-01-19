@@ -3,22 +3,25 @@ CMPUT404-assignment-webserver
 
 CMPUT404-assignment-webserver
 
-See requirements.org (plain-text) for a description of the project.
+A Basic Socket Server made by Ahmed Ghoneim
+Screen-shots under screenshot Folder
 
-Make a simple webserver.
+List of Features:
+=================
+1- Serve HTML and CSS files under /www folders
+2- if Url file/folder doesn't exist under /www folder 404 error will be thrown
+3- if folder is requested and doesn't contain index.html the page will return list of the Folder contents
+4- The server is configured to handle missing trailing slash form URL (for example both /deep/ and /deep) will return index.html
 
 Contributors / Licensing
-========================
-
+===================================
 Generally everything is LICENSE'D under the Apache 2 license by Abram Hindle.
 
 server.py contains contributions from:
 
-* Abram Hindle
-* Eddie Antonio Santos
+Abram Hindle
+Eddie Antonio Santos
+Ahmed Ghoneim
 
-But the server.py example is derived from the python documentation
-examples thus some of the code is Copyright © 2001-2013 Python
-Software Foundation; All Rights Reserved under the PSF license (GPL
-compatible) http://docs.python.org/2/library/socketserver.html
+But the server.py example is derived from the python documentation examples thus some of the code is Copyright © 2001-2013 Python Software Foundation; All Rights Reserved under the PSF license (GPL compatible) http://docs.python.org/2/library/socketserver.html
 
