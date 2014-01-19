@@ -1,10 +1,11 @@
 CMPUT404-assignment-webserver
 =============================
 
-CMPUT404-assignment-webserver
+CMPUT404-assignment-webserver<br>
 
-A Basic Socket Server made by Ahmed Ghoneim
-Screen-shots under screenshot Folder
+A Basic Socket Server made by Ahmed Ghoneim <br>
+
+Screen-shots under screenshot Folder (Total 3)
 
 List of Features:
 =================
@@ -15,9 +16,9 @@ List of Features:
 
 Contributors / Licensing
 ===================================
-Generally everything is LICENSE'D under the Apache 2 license by Abram Hindle.
+Generally everything is LICENSE'D under the Apache 2 license by Abram Hindle.<br>
 
-server.py contains contributions from:
+server.py contains contributions from:<br>
 
 Abram Hindle <br>
 Eddie Antonio Santos <br>
